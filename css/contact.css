@@ -1,8 +1,17 @@
-body{
-  background-color: #ECF3F1;
+:root {
+  --background: #ECF3F1;
+  --sections: white;
+  --headers: #448C74;
+  --text: black;
+  --shadows: #87ae9e8a;
+  --text-highlight: #888;
+}
+
+body {
+  background-color: var(--background);
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
-  color: black;
+  color: var(--text);
   transition: background-color 0.5s, color 0.5s;
 }
 
@@ -11,54 +20,51 @@ body{
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.5); /* Transparent effect */
-  backdrop-filter: blur(10px); /* Adds blur effect to background */
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(10px); 
   transition: all 0.3s ease;
 }
 
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5rem;
-  color: black;
+  color: var(--text);
 }
 
 .nav-link {
-  color: black;
+  color: var(--text);
   font-size: 1.3rem;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #448C74; /* Highlight color on hover */
+  color: var(--headers); 
 }
+
 .cv-btn {
-  background-color: black;
+  background-color: var(--text);
   border-radius: 5px;
   cursor: pointer;
   padding: 5px 5px;
   font-size: 1rem;
-  transition: all 0.3s ease-in-out; /* Smooth transition */
+  transition: all 0.3s ease-in-out; 
 }
 
-.cv-btn a{
+.cv-btn a {
   text-decoration: none;
-  color: white;
+  color: var(--sections);
 }
+
 .cv-btn:hover {
-  background-color: #448C74; /* Change color on hover */
-  transform: scale(1.1); /* Slight zoom effect */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft glow effect */
-}
-.cv-btn:hover {
-  background-color: #448C74; /* Change color on hover */
-  transform: scale(1.1); /* Slight zoom effect */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft glow effect */
+  background-color: var(--headers); 
+  transform: scale(1.1); 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
 }
 
 nav:hover {
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px); /* Lift effect */
+  transform: translateY(-5px); 
 }
 
 /* Page Container */
@@ -68,30 +74,29 @@ nav:hover {
   margin-top: 1rem;
 }
 
-/* Git in Touch Section (Top Container) */
+/* Get in Touch Section (Top Container) */
 .get-touch {
   border-radius: 10px;
-  background: white;
-  border-radius: 10px;
+  background: var(--sections);
   padding: 1rem;
   text-align: center;
-  box-shadow: 0px 1px 15px 0.1px #87ae9e8a;
+  box-shadow: 0px 1px 15px 0.1px var(--shadows);
   transition: all 0.3s ease;
   max-width: 70%;
 }
 
 .contact-section h1 {
   font-size: 2.5em;
-  color: #333;
+  color: var(--text)
 }
 
 .contact-section p {
   font-size: 1.1em;
-  color: #555;
+  color: var(--text)
 }
 
 .contact-section .email-link {
-  color: #448c74;
+  color: var(--headers);
   font-weight: bold;
   text-decoration: none;
 }
@@ -103,11 +108,10 @@ nav:hover {
 /* Bottom Container (Form + Icon) */
 .contaect-icon-form {
   border-radius: 10px;
-  background: white;
-  border-radius: 10px;
+  background: var(--sections);
   padding: 1rem;
   text-align: center;
-  box-shadow: 0px 1px 15px 0.1px #87ae9e8a;
+  box-shadow: 0px 1px 15px 0.1px var(--shadows);
   transition: all 0.3s ease;
   margin-top: 4%;
   max-width: 70%;
@@ -124,11 +128,8 @@ nav:hover {
 .contact-info {
   flex: 1;
   padding: 20px;
-
   border-radius: 10px;
-  background: white;
-  border-radius: 10px;
-  padding: 1rem;
+  background: var(--sections);
   text-align: center;
   transition: all 0.3s ease;
   margin-top: 4%;
@@ -138,11 +139,11 @@ nav:hover {
 .contact-info h2 {
   font-size: 1.5em;
   margin-bottom: 15px;
-  color: #333;
+  color: var(--text);
 }
 
 .contact-info a {
-  color: #448c74;
+  color: var(--headers);
   text-decoration: none;
 }
 
@@ -175,12 +176,8 @@ nav:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.social-item:hover img {
-  transform: scale(1.2);
-}
-
 .social-item:hover {
-  background-color: #448c74;
+  background-color: var(--headers);
   border-radius: 5%;
 }
 
@@ -198,7 +195,7 @@ nav:hover {
 .contact-form h2 {
   font-size: 1.5em;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--text);
 }
 
 .form-group {
@@ -209,7 +206,7 @@ nav:hover {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #333;
+  color: var(--text);
 }
 
 .contact-form input,
@@ -219,7 +216,7 @@ nav:hover {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1em;
-  color: #333;
+  color: var(--text);
   margin-top: 5px;
 }
 
@@ -227,8 +224,8 @@ nav:hover {
   margin-top: 10px;
   padding: 12px 20px;
   font-size: 1em;
-  color: #fff;
-  background-color: #448c74;
+  color: var(--sections);
+  background-color: var(--headers);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -236,7 +233,7 @@ nav:hover {
 }
 
 .contact-form button:hover {
-  background-color: black;
+  background-color: var(--text);
   font-size: 1.2rem;
 }
 
@@ -249,7 +246,7 @@ footer {
 .social-links a {
   display: inline-block;
   margin: 0.5rem;
-  color: black;
+  color: var(--text);
   text-decoration: none;
   font-size: 1.5rem;
   transition: color 0.3s ease;
@@ -269,78 +266,4 @@ footer {
 
 .social-links a:nth-child(4):hover {
   color: #c13584; /* Instagram */
-}
-
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
-  .contact-container {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    gap: 20px; /* Add spacing between elements */
-  }
-
-  .contact-info,
-  .contact-form {
-    width: 90%; /* Use most of the screen width */
-    max-width: none; /* Remove max-width limits */
-    margin: 0 auto; /* Center elements */
-  }
-
-  .contact-info {
-    text-align: center;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .contact-form {
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .skills-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .skill-item {
-    width: 70px; /* Adjust size for smaller screens */
-    height: 70px;
-    text-align: center;
-    margin: 10px auto;
-  }
-
-  .skill-item img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8); /* Slightly darker for phones */
-  }
-
-  .navbar-brand {
-    font-size: 1.2rem; /* Slightly smaller font */
-  }
-
-  .nav-link {
-    font-size: 1rem;
-    padding: 5px 10px;
-  }
-
-  .contaect-icon-form,
-  .get-touch {
-    width: 100%;
-    max-width: 90%; /* Use 90% of the screen width */
-    margin: 10px 0;
-  }
 }

@@ -1,100 +1,91 @@
+:root {
+    --background: #ECF3F1;
+    --sections: white;
+    --headers: #448C74;
+    --text: black;
+    --shadows: #87ae9e8a;
+    --text-highlight: #888;
+}
+
 body {
-    background-color: #ECF3F1;
+    background-color: var(--background);
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    color: black;
+    color: var(--text);
     transition: background-color 0.5s, color 0.5s;
 }
 
-/* Navbar */
+  /* Navbar */
 .navbar {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.5); /* Transparent effect */
-    backdrop-filter: blur(10px); /* Adds blur effect to background */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); 
     transition: all 0.3s ease;
-  }
-  
-  .navbar-brand {
+}
+
+.navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
-    color: black;
-  }
-  
-  .nav-link {
-    color: black;
+    color: var(--text);
+}
+
+.nav-link {
+    color: var(--text);
     font-size: 1.3rem;
     font-weight: 500;
     transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    color: #448C74; /* Highlight color on hover */
-  }
+}
 
-  nav:hover {
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px); /* Lift effect */
-  }
-  
-  .cv-btn {
-    background-color: black;
+.nav-link:hover {
+    color: var(--headers); 
+}
+
+nav:hover {
+    box-shadow: 0px 4px 16px var(--shadows);
+    transform: translateY(-5px); 
+}
+
+.cv-btn {
+    background-color: var(--text);
     border-radius: 5px;
     cursor: pointer;
     padding: 5px 5px;
     font-size: 1rem;
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-  }
-  
-  .cv-btn a{
-    text-decoration: none;
-    color: white;
-  }
-  .cv-btn:hover {
-    background-color: #448C74; /* Change color on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft glow effect */
-  }
-  .cv-btn:hover {
-    background-color: #448C74; /* Change color on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft glow effect */
-  }
-
-  /* Switch Button */
-.form-check-input {
-    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
 }
+
+.cv-btn a {
+    text-decoration: none;
+    color: var(--sections);
+}
+
+.cv-btn:hover {
+    background-color: var(--headers); 
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px var(--shadows); 
+}
+
+
+
 /* Footer */
 footer {
     text-align: center;
     border-radius: 10px;
-} 
+}
 
 .social-links a {
     display: inline-block;
     margin: 0.5rem;
-    color: black;
+    color: var(--text);
     text-decoration: none;
-    font-size: 1.5rem; 
-    transition: color 0.3s ease; 
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #0073b1; /* LinkedIn */
-}
-
-.social-links a:nth-child(2):hover {
-    color: #8b8b8b; /* GitHub */
-}
-
-.social-links a:nth-child(3):hover {
-    color: #25D366; /* WhatsApp */
-}
-
-.social-links a:nth-child(4):hover {
-    color: #C13584; /* Instagram */
+    color: var(--headers); 
 }
 
 .projects-section {
@@ -104,19 +95,19 @@ footer {
 .projects-card {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Left: Image, Right: Text + Buttons */
-    grid-gap: 30px; /* Increased gap between image and description */
-    background-color: white;
+    grid-gap: 30px; 
+    background-color: var(--sections);
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 40px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px var(--shadows);
     text-align: left;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .projects-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 20px var(--shadows);
 }
 
 .project-img {
@@ -129,12 +120,12 @@ footer {
 .project-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image covers the container */
+    object-fit: cover; 
     transition: transform 0.3s ease-in-out;
 }
 
 .project-img:hover img {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05); 
 }
 
 .project-description {
@@ -146,12 +137,12 @@ footer {
 .project-description h3 {
     font-size: 28px;
     font-weight: 600;
-    color: #333;
+    color: var(--text);
 }
 
 .project-description p {
     font-size: 16px;
-    color: #555;
+    color: var(--text-highlight);
     line-height: 1.6;
 }
 
@@ -173,42 +164,34 @@ footer {
 }
 
 .btn-github {
-    background-color: #333;
-    color: white;
+    background-color: var(--text);
+    color: var(--sections);
 }
 
 .btn-github:hover {
-    background-color: #ffffff;
-    border-color: black;
+    background-color: var(--sections);
+    border-color: var(--text);
     transform: scale(1.05);
 }
 
 .btn-doc {
-    background-color: #448C74;
-    color: white;
+    background-color: var(--headers);
+    color: var(--sections);
 }
 
 .btn-doc:hover {
-    border-color: #448C74;
-    color: #448C74;
+    border-color: var(--headers);
+    color: var(--headers);
     transform: scale(1.05);
 }
 
-
 @media (max-width: 768px) {
     .projects-card {
-        grid-template-columns: 1fr; /* Stacks image and text vertically on smaller screens */
+      grid-template-columns: 1fr; /* Stacks image and text vertically on smaller screens */
     }
-    
+
     .project-buttons {
         flex-direction: column; /* Stack buttons vertically */
         align-items: flex-start;
     }
 }
-
-
-
-
-
-
-

@@ -1,95 +1,110 @@
+:root {
+  --background: #ECF3F1;
+  --sections: white;
+  --headers: #448C74;
+  --text: black; 
+  --shadows: #87ae9e8a;
+  --text-highlight: #888;
+  --navbar-bg: rgba(0, 0, 0, 0.5); 
+  --navbar-shadow: rgba(0, 0, 0, 0.2);
+  --pdf-bg: #f9f9f9;
+}
+
 body {
-    background-color: #ecf3f1;
-    margin: 0;
-    font-family: "Times New Roman", Times, serif;
-    color: black;
-    transition: background-color 0.5s, color 0.5s;
+  background-color: var(--background);
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: var(--text);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 /* Navbar */
 .navbar {
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.5); /* Transparent effect */
-    backdrop-filter: blur(10px); /* Adds blur effect to background */
-    transition: all 0.3s ease;
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: black;
-  }
-  
-  .nav-link {
-    color: black;
-    font-size: 1.3rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    color: #448C74; /* Highlight color on hover */
-  }
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: var(--navbar-bg); 
+  backdrop-filter: blur(10px); 
+  transition: all 0.3s ease;
+}
 
-  nav:hover {
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px); /* Lift effect */
-  }
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
+.nav-link {
+  color: var(--text);
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--headers); 
+}
+
+nav:hover {
+  box-shadow: 0px 4px 16px var(--navbar-shadow);
+  transform: translateY(-5px); /* Lift effect */
+}
 
 .cv-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background: #ecf3f1;
-    border-radius: 1%;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    padding: 20px;
-    margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--background);
+  border-radius: 1%;
+  box-shadow: 10px 10px 10px 10px var(--shadows);
+  margin-top: 20px;
+  padding: 20px;
+  margin-bottom: 3rem;
 }
+
 .pdf-viewer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: var(--pdf-bg);
+  border-radius: 8px;
 }
+
 .pdf-viewer iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
 }
+
 /* Footer */
 footer {
-text-align: center;
-border-radius: 10px;
-} 
+  text-align: center;
+  border-radius: 10px;
+}
 
 .social-links a {
-display: inline-block;
-margin: 0.5rem;
-color: black;
-text-decoration: none;
-font-size: 1.5rem; 
-transition: color 0.3s ease; 
+  display: inline-block;
+  margin: 0.5rem;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-color: #0073b1; /* LinkedIn */
-}
-
-.social-links a:nth-child(2):hover {
-color: #8b8b8b; /* GitHub */
-}
-
-.social-links a:nth-child(3):hover {
-color: #25D366; /* WhatsApp */
-}
-
-.social-links a:nth-child(4):hover {
-color: #C13584; /* Instagram */
-}
+  color: #0073b1; /* LinkedIn */
+  }
+  
+  .social-links a:nth-child(2):hover {
+  color: #8b8b8b; /* GitHub */
+  }
+  
+  .social-links a:nth-child(3):hover {
+  color: #25D366; /* WhatsApp */
+  }
+  
+  .social-links a:nth-child(4):hover {
+  color: #C13584; /* Instagram */
+  }
