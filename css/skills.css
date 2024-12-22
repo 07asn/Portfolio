@@ -35,6 +35,11 @@ body {
     color: #448C74; 
   }
   
+  nav:hover {
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Lift effect */
+}
+  
   /* Skills Section */
   .skills-section {
     padding: 40px 20px;

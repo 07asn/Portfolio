@@ -6,13 +6,13 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
-/* Navbar */
+/* Navbar Customization */
 .navbar {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5); /* Transparent effect */
+    backdrop-filter: blur(10px); /* Adds blur effect to background */
     transition: all 0.3s ease;
 }
 
@@ -33,6 +33,15 @@ body {
     color: #448C74; 
 }
 
+nav:hover {
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Lift effect */
+}
+
+  /* Switch Button */
+.form-check-input {
+    cursor: pointer;
+}
 /* Footer */
 footer {
     text-align: center;

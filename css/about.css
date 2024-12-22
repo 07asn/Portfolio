@@ -2,12 +2,11 @@ body{
     background-color: #ECF3F1;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    
     color: black;
     transition: background-color 0.5s, color 0.5s;
 }
 
-/* Navbar Customization */
+/* Navbar */
 .navbar {
     width: 100%;
     top: 0;
@@ -277,5 +276,54 @@ body{
     text-align: center;
     padding: 1rem;
     border-radius: 10px;
-  } 
-  
+  }
+
+/* For small devices (mobile) */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .grid-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem; /* Optional: Add padding for better spacing */
+  }
+
+  .left-panel, .hero, .center-container, .experience-card, .education-card {
+    width: 100%;
+  }
+
+  .avatar {
+    width: 200px; /* Adjust for smaller screens */
+    height: 200px;
+  }
+
+  .avatar img {
+    width: 175px;
+    height: 175px;
+  }
+
+  .hero-paragraph {
+    font-size: 1.2rem; /* Adjust text size for readability */
+  }
+
+  .scroll-text {
+    font-size: 2rem; /* Smaller text for scrolling */
+  }
+
+  .availability-btn {
+    margin-left: 0; /* Center button alignment */
+    text-align: center;
+  }
+
+  .card-heading {
+    font-size: 1.2rem;
+  }
+
+  .item-role, .item-company {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
