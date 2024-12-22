@@ -26,10 +26,10 @@ Below are some screenshots from the portfolio project:
 ![Preview 3](https://drive.google.com/uc?export=view&id=1Clb59b0GdOlOvQSQR0isLwr9DqDE8Jva)
 
 ### Preview 4
-![Preview 4](https://drive.google.com/uc?export=view&id=1cHNoMvP8xL4drHAFxbPoqMT9DofIx9PD)
+![Preview 5](https://drive.google.com/uc?export=view&id=1qpOCK-telsH2c9ZNaCjW-I-mPyS2V28Z)
 
 ### Preview 5
-![Preview 5](https://drive.google.com/uc?export=view&id=1qpOCK-telsH2c9ZNaCjW-I-mPyS2V28Z)
+![Preview 4](https://drive.google.com/uc?export=view&id=1cHNoMvP8xL4drHAFxbPoqMT9DofIx9PD)
 
 
 ---
