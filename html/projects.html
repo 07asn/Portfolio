@@ -6,71 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hasan Mansour</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="../css/projects.css" rel="stylesheet">
+    <!-- Fixed path to CSS file -->
+    <link href="/css/projects.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-      <div class="container justify-content-center">
-          <!-- Name on the left -->
-          <a class="navbar-brand" href="../index.html">Hasan Mansour</a>
-      
-          <!-- Toggler for smaller screens -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" style="background-color: black;"></span>
-          </button>
-          
-          <!-- Navbar Links -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="../index.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="skills.html">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-              </ul>
-              <!-- CV Button -->
+        <div class="container justify-content-center">
+            <!-- Name on the left -->
+            <a class="navbar-brand" href="/index.html">Hasan Mansour</a>
+
+            <!-- Toggler for smaller screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: black;"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- CV Button -->
                 <button class="cv-btn">
-                  <a href="cv.html">View CV</a>
+                    <a href="cv.html">View CV</a>
                 </button>
-          </div>
-      </div>
-  </nav>
+            </div>
+        </div>
+    </nav>
+
     <section class="projects-section">
         <!-- Project 1 -->
         <div class="projects-card container">
             <div class="project-img">
-                <img src="../images/jawa2.png" alt="Project Image">
+                <!-- Fixed path to image -->
+                <img src="/images/jawa2.png" alt="Project Image">
             </div>
             <div class="project-description">
                 <h3>Jawa Clinic</h3>
-                <p>This project is a clinic appointment system designed to streamline appointment bookings, manage clinic staff, and allow patients, doctors, receptionists, and managers to interact efficiently. The system implements role-based APIs for four user categories: patients, doctors, receptionists, and managers.
-                    The system supports a multi-step booking cycle for appointments, allowing patients to book appointments, view visit details, and enabling doctors to document diagnoses and services provided. It also provides features for managing clinic staff, services, and pricing.</p>
+                <p>This project is a clinic appointment system designed to streamline appointment bookings, manage clinic staff, and allow patients, doctors, receptionists, and managers to interact efficiently...</p>
                 <div class="project-buttons">
                     <a href="https://github.com/07asn/JawaClinic.git" target="_blank" class="btn btn-github">Open on GitHub</a>
                     <a href="https://docs.google.com/presentation/d/1ABBnx3f2EkmGOa6yERrw1_hHPnbM0uqV/edit?usp=drive_link&ouid=104223863874430898544&rtpof=true&sd=true" target="_blank" class="btn btn-doc">View Documentation</a>
                 </div>
             </div>
         </div>
-    
+
         <!-- Project 2 -->
         <div class="projects-card container">
             <div class="project-img">
-                <img src="../images/Accu.png" alt="Project Image">
+                <!-- Fixed path to image -->
+                <img src="/images/Accu.png" alt="Project Image">
             </div>
             <div class="project-description">
                 <h3>AccuBook (Bookie)</h3>
-                
-                <p> This platform modernizes traditional debt and store management for small to medium-sized businesses. It enables users to digitally record transactions, track interactions with customers and suppliers, and generate detailed financial reports. The platform also includes a product display feature, allowing traders to showcase their inventory and share it with customers via messaging apps like WhatsApp. I developed this project as a backend solution using Java, the Spring Framework, and Oracle DB to ensure robust functionality and efficiency. </p>
+                <p>This platform modernizes traditional debt and store management for small to medium-sized businesses...</p>
                 <div class="project-buttons">
                     <a href="https://github.com/07asn/AccuBook.git" target="_blank" class="btn btn-github">Open on GitHub</a>
                     <a href="#" target="_blank" class="btn btn-doc">View Documentation</a>
@@ -78,8 +80,6 @@
             </div>
         </div>
     </section>
-    
-    
 
     <!-- Footer -->
     <footer class="container">
@@ -87,27 +87,13 @@
         <p>Email: 07ASN.M@gmail.com</p>
         
         <div class="social-links container">
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/07asn/" title="LinkedIn" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-        
-            <!-- GitHub -->
-            <a href="https://www.github.com/07asn" title="GitHub" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        
-            <!-- WhatsApp -->
-            <a href="tel:+962788862798" title="WhatsApp" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/07asn/" title="Instagram" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
+            <a href="https://www.linkedin.com/in/07asn/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com/07asn" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="tel:+962788862798" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/07asn/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
-    </footer> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
