@@ -11,8 +11,8 @@ body{
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.5); /* Transparent effect */
+  backdrop-filter: blur(10px); /* Adds blur effect to background */
   transition: all 0.3s ease;
 }
 
@@ -30,17 +30,35 @@ body{
 }
 
 .nav-link:hover {
-  color: #448C74; 
+  color: #448C74; /* Highlight color on hover */
+}
+.cv-btn {
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.cv-btn a{
+  text-decoration: none;
+  color: white;
+}
+.cv-btn:hover {
+  background-color: #448C74; /* Change color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft glow effect */
+}
+.cv-btn:hover {
+  background-color: #448C74; /* Change color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft glow effect */
 }
 
 nav:hover {
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px); /* Lift effect */
-}
-
-/* Switch Button */
-.form-check-input {
-  cursor: pointer;
 }
 
 /* Page Container */

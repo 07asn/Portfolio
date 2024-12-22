@@ -8,36 +8,32 @@ body{
 
 /* Navbar */
 .navbar {
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.5); /* Transparent effect */
-    backdrop-filter: blur(10px); /* Adds blur effect to background */
-    transition: all 0.3s ease;
-  }
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5); /* Transparent effect */
+  backdrop-filter: blur(10px); /* Adds blur effect to background */
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.nav-link {
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #448C74; /* Highlight color on hover */
+}
   
-  .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: black;
-  }
-  
-  .nav-link {
-    color: black;
-    font-size: 1.3rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    color: #448C74; /* Highlight color on hover */
-  }
-  
-  /* Switch Button */
-  .form-check-input {
-    cursor: pointer;
-  }
-  
+
   .grid-layout  {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
@@ -154,7 +150,7 @@ body{
     color: white;
   }
   .availability-btn:hover {
-    background-color: #ffd700;
+    background-color: black;
   }
   
   /* Center Bottom Block */

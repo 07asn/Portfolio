@@ -6,7 +6,7 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
-/* Navbar Customization */
+/* Navbar */
 .navbar {
     width: 100%;
     top: 0;
@@ -14,29 +14,53 @@ body {
     background: rgba(0, 0, 0, 0.5); /* Transparent effect */
     backdrop-filter: blur(10px); /* Adds blur effect to background */
     transition: all 0.3s ease;
-}
-
-.navbar-brand {
+  }
+  
+  .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
     color: black;
-}
-
-.nav-link {
+  }
+  
+  .nav-link {
     color: black;
     font-size: 1.3rem;
     font-weight: 500;
     transition: color 0.3s ease;
-}
+  }
+  
+  .nav-link:hover {
+    color: #448C74; /* Highlight color on hover */
+  }
 
-.nav-link:hover {
-    color: #448C74; 
-}
-
-nav:hover {
+  nav:hover {
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px); /* Lift effect */
-}
+  }
+  
+  .cv-btn {
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .cv-btn a{
+    text-decoration: none;
+    color: white;
+  }
+  .cv-btn:hover {
+    background-color: #448C74; /* Change color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft glow effect */
+  }
+  .cv-btn:hover {
+    background-color: #448C74; /* Change color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft glow effect */
+  }
 
   /* Switch Button */
 .form-check-input {
@@ -122,13 +146,11 @@ footer {
 .project-description h3 {
     font-size: 28px;
     font-weight: 600;
-    margin-bottom: 15px;
     color: #333;
 }
 
 .project-description p {
     font-size: 16px;
-    margin-bottom: 20px;
     color: #555;
     line-height: 1.6;
 }
@@ -156,7 +178,8 @@ footer {
 }
 
 .btn-github:hover {
-    background-color: #444;
+    background-color: #ffffff;
+    border-color: black;
     transform: scale(1.05);
 }
 
@@ -166,9 +189,11 @@ footer {
 }
 
 .btn-doc:hover {
-    background-color: #45a049;
+    border-color: #448C74;
+    color: #448C74;
     transform: scale(1.05);
 }
+
 
 @media (max-width: 768px) {
     .projects-card {
