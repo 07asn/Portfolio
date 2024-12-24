@@ -8,7 +8,7 @@ Explore the wireframes and mockups for the project design on Figma:
 [Access the Figma Wireframe & Mockup](https://www.figma.com/design/0Vte1WD6VevE7GiRNKWbHO/Portfolio?m=auto&t=XQOvA1jo5vaK7hSK-1)
 
 
-## Figma Wireframe and Mockup
+## Live Website
 Explore the website by live preview:
 [Live Preview](https://07asn.github.io/Portfolio/)
 
