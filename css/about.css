@@ -68,7 +68,7 @@ body{
     width: 300px;
     height: 305px;
     border-radius: 50%;
-    border: 3px dashed var(--shadows);
+    border: 3px dashed var(--text);
     margin: 1.5rem auto 2rem ;
   }
   .avatar img{
@@ -331,4 +331,117 @@ body{
     padding: 1rem;
     font-size: 0.9rem;
   }
+}
+/* Dark Mode Variables */
+/* Dark Mode Variables */
+.dark-mode {
+  --background: #121212; /* Darker for true black backgrounds */
+  --sections: #1E1E1E;   /* Soft dark gray for sections */
+  --headers: #64D1A1;    /* Softer green for headers */
+  --text: #F1F1F1;       /* Off-white for comfortable reading */
+  --shadows: #00000088;  /* Subtle shadow effect */
+  --text-highlight: #BBBBBB; /* Lighter gray for highlights */
+  --date:
+}
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.navbar, .left-panel, .hero, .center-container, .experience-card, .education-card {
+  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+.navbar-brand{
+  color:var(--text);
+}
+.navbar-collapse{
+  color:var(--text);
+}
+.heading-primary , .hero-paragraph, .left-panel-description{
+  color: var(--text);
+}
+.item-company{
+  color: var(--headers);
+}
+.item-date{
+  color: var(--text-highlight);
+}
+.hero{
+  background-color: var(--sections);
+}
+.navbar-brand:hover{
+  color: var(--headers);
+}
+/* Button Styling */
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--button-bg); /* Dynamic background based on theme */
+  border: 2px solid var(--button-border); /* Add border for contrast */
+  border-radius: 50%; /* Circular button */
+ 
+  cursor: pointer;
+  position: relative; /* For icon transitions */
+  overflow: hidden; /* Ensure icons stay inside */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Icon Styling */
+.icon-sun,
+.icon-moon {
+  font-size: 1.5rem;
+  position: absolute;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Sun Icon - Visible in Light Mode */
+.icon-sun {
+  color: #ffdd33;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* Moon Icon - Visible in Dark Mode */
+.icon-moon {
+  color: #ffffff;
+  opacity: 0;
+  transform: rotate(-180deg);
+}
+
+/* Theme: Light Mode */
+body.light-mode .theme-toggle-btn {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}
+
+body.light-mode .icon-sun {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+body.light-mode .icon-moon {
+  opacity: 0;
+  transform: rotate(-180deg);
+}
+
+/* Theme: Dark Mode */
+body.dark-mode .theme-toggle-btn {
+  background-color: #444;
+  border-color: #666;
+}
+
+body.dark-mode .icon-sun {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+body.dark-mode .icon-moon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+
+.footer-text{
+  color: var(--text);
 }

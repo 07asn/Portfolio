@@ -11,34 +11,46 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div class="container justify-content-center">
-            <!-- Name on the left -->
-            <a class="navbar-brand" href="../index.html">Hasan Mansour</a>
-        
-            <!-- Toggler for smaller screens -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="background-color: black;"></span>
+        <div class="container v justify-content-center">
+          <a class="navbar-brand" href="index.html">Hasan Mansour</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              class="navbar-toggler-icon"
+              style="background-color: black"
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="skills.html">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- Night Mode Toggle Button -->
+            <!-- Night Mode Toggle Button -->
+            <button id="toggle-theme" class="theme-toggle-btn">
+              <span class="icon-sun">🔆</span>
+              <span class="icon-moon">🌙</span>
             </button>
-            
-            <!-- Navbar Links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="skills.html">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
     <div class="cv-container container">
         <div class="pdf-viewer">
         <iframe src="../images/HasanMansourCV.pdf" title="Hasan Mansour CV"></iframe>
@@ -72,5 +84,31 @@
         </div>
     </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Select the toggle button and body
+        const toggleThemeButton = document.getElementById('toggle-theme');
+        const body = document.body;
+      
+        // Check and Apply Saved Theme Preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+          body.classList.add('dark-mode');
+          
+        }
+      
+        // Toggle Dark Mode
+        toggleThemeButton.addEventListener('click', () => {
+          body.classList.toggle('dark-mode');
+      
+          // Save Theme Preference
+          if (body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+            
+          } else {
+            localStorage.setItem('theme', 'light');
+            
+          }
+        });
+      </script>
 </body>
 </html>
