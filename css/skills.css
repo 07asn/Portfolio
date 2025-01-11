@@ -1,79 +1,6 @@
-:root {
-  --background: #ECF3F1;
-  --sections: white;
-  --headers: #448C74;
-  --text: black;
-  --shadows: #87ae9e8a;
-  --text-highlight: #888;
-}
-
-body {
-  background-color: var(--background);
-  margin: 0;
-  font-family: 'Times New Roman', Times, serif;
-  color: var(--text);
-  transition: background-color 0.5s, color 0.5s;
-}
-
-/* Navbar */
-.navbar {
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.5); /* Transparent effect remains */
-  backdrop-filter: blur(10px); /* Adds blur effect to background */
-  transition: all 0.3s ease;
-}
-
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: var(--text);
-}
-
-.nav-link {
-  color: var(--text);
-  font-size: 1.3rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: var(--headers); /* Highlight color on hover */
-}
-
-nav:hover {
-  box-shadow: 0px 4px 16px var(--shadows);
-  transform: translateY(-5px); /* Lift effect */
-}
-
-.cv-btn {
-  background-color: var(--text);
-  border-color: var(--text);
-  border-radius: 5px;
-  cursor: pointer;
-  padding: 5px 5px;
-  font-size: 1rem;
-  transition: all 0.3s ease-in-out; /* Smooth transition */
-  margin-left: 1rem;
-}
-
-.cv-btn a {
-  text-decoration: none;
-  color: var(--sections);
-}
-
-.cv-btn:hover {
-  background-color: var(--headers); /* Change color on hover */
-  transform: scale(1.1); /* Slight zoom effect */
-  box-shadow: 0 0 15px var(--shadows); /* Soft glow effect */
-}
-
-/* Skills Section */
 .skills-section {
   padding: 40px 20px;
 }
-
 .skills-card {
   background-color: var(--sections);
   border-radius: 12px;
@@ -82,200 +9,44 @@ nav:hover {
   box-shadow: 0 4px 8px var(--shadows);
   text-align: center;
 }
-
 .skills-title {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 20px;
   color: var(--text);
 }
-
 .skills-icons {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-
 .skill-item {
   text-align: center;
   padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .skill-item img {
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
-
 .skill-item p {
   font-size: 14px;
   color: var(--text);
   margin-top: 5px;
 }
-
 .skill-item:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 12px var(--shadows);
 }
-
 .skill-item:hover img {
   transform: scale(1.2);
 }
-
 .skills-description {
   font-size: 16px;
   color: var(--text-highlight);
   line-height: 1.6;
   margin-top: 20px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  border-radius: 10px;
-}
-
-.social-links a {
-  display: inline-block;
-  margin: 0.5rem;
-  color: var(--text);
-  text-decoration: none;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: var(--headers); /* Use the header color for hover effects */
-}
-
-/* Dark Mode Variables */
-.dark-mode {
-  --background: #121212; /* Darker for true black backgrounds */
-  --sections: #1E1E1E;   /* Soft dark gray for sections */
-  --headers: #64D1A1;    /* Softer green for headers */
-  --text: #F1F1F1;       /* Off-white for comfortable reading */
-  --shadows: #00000088;  /* Subtle shadow effect */
-  --text-highlight: #BBBBBB; /* Lighter gray for highlights */
-  --date:
-}
-body {
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-.navbar, .left-panel, .hero, .center-container, .experience-card, .education-card {
-  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
-}
-.navbar-brand{
-  color:var(--text);
-}
-.navbar-collapse{
-  color:var(--text);
-}
-
-
-.hero{
-  background-color: var(--sections);
-}
-.navbar-brand:hover{
-  color: var(--headers);
-}
-/* Button Styling */
-.theme-toggle-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  background-color: var(--button-bg); /* Dynamic background based on theme */
-  border: 2px solid var(--button-border); /* Add border for contrast */
-  border-radius: 50%; /* Circular button */
- 
-  cursor: pointer;
-  position: relative; /* For icon transitions */
-  overflow: hidden; /* Ensure icons stay inside */
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-/* Icon Styling */
-.icon-sun,
-.icon-moon {
-  font-size: 1.5rem;
-  position: absolute;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Sun Icon - Visible in Light Mode */
-.icon-sun {
-  color: #ffdd33;
-  opacity: 1;
-  transform: rotate(0deg);
-}
-
-/* Moon Icon - Visible in Dark Mode */
-.icon-moon {
-  color: #ffffff;
-  opacity: 0;
-  transform: rotate(-180deg);
-}
-
-/* Theme: Light Mode */
-body.light-mode .theme-toggle-btn {
-  background-color: #f5f5f5;
-  border-color: #ddd;
-}
-
-body.light-mode .icon-sun {
-  opacity: 1;
-  transform: rotate(0deg);
-}
-
-body.light-mode .icon-moon {
-  opacity: 0;
-  transform: rotate(-180deg);
-}
-
-/* Theme: Dark Mode */
-body.dark-mode .theme-toggle-btn {
-  background-color: #444;
-  border-color: #666;
-}
-
-body.dark-mode .icon-sun {
-  opacity: 0;
-  transform: rotate(180deg);
-}
-
-body.dark-mode .icon-moon {
-  opacity: 1;
-  transform: rotate(0deg);
-}
-
-
-.footer-text{
-  color: var(--text);
-}
-
-.btn {
-  padding: 8px 15px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  margin-left: 1%;
-}
-
-.btn-github {
-  background-color: var(--text);
-  color: var(--sections);
-}
-
-.btn-github:hover {
-  background-color: var(--sections);
-  border-color: var(--text);
-  transform: scale(1.05);
 }
