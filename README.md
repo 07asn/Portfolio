@@ -1,10 +1,7 @@
 # 🚀 Professional Portfolio | Hasan Omar Mansour
 
-![Portfolio Banner](https://drive.google.com/uc?export=view&id=1bYhhEnVr3oeIVqjZT8u1ycZAkpCO8L91)
-
 [![GitHub stars](https://img.shields.io/github/stars/07asn/Portfolio?style=social)](https://github.com/07asn/Portfolio)
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://07asn.github.io/Portfolio/)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 > A cutting-edge web portfolio showcasing my expertise as a MERN Stack & Java Developer
 
@@ -169,12 +166,6 @@ portfolio/
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 </div>
-
----
-
-## 📄 License
-
-This project is available as open source under the terms of the [MIT License](LICENSE).
 
 ---
 
