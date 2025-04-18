@@ -130,8 +130,8 @@ portfolio/
 
 3. Open `index.html` in your browser or use a local server:
    ```bash
-   # Using Python's built-in server (Python 3)
-   python -m http.server
+   # Using VS Code's Plug-in server
+   Open With Live Server
    ```
 
 ---
