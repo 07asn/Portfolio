@@ -27,42 +27,57 @@
   <div class="preloader">
     <div class="loader"></div>
   </div>
-
-  <!-- Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <span class="brand-text">Hasan Mansour</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html" aria-current="page">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/skills.html">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/projects.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="html/contact.html">Contact</a>
-            </li>
-          </ul>
-          <!-- Theme Toggle Button -->
-          <button id="toggle-theme" class="theme-toggle" aria-label="Toggle dark mode">
-            <i class="fas fa-sun icon-sun"></i>
-            <i class="fas fa-moon icon-moon"></i>
-          </button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container justify-content-center">
+            <a class="navbar-brand" href="index.html">Hasan Mansour</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html/contact.html">Contact</a></li>
+                </ul>
+                <!-- Enhanced Theme Toggle Button -->
+                <div class="theme-toggle-wrapper">
+                    <button id="toggle-theme" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                        <div class="theme-toggle-track">
+                            <div class="theme-toggle-thumb"></div>
+                            <div class="theme-toggle-icon sun">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </div>
+                            <div class="theme-toggle-icon moon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <!-- CV Button -->
+                <a href="html/cv.html" target="_blank" class="btn btn-cv">View CV</a>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+</header>
 
   <main>
     <div class="grid-layout container">
