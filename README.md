@@ -1,11 +1,11 @@
-# 🚀 Professional Portfolio | Hasan Omar Mansour
+# Professional Portfolio | Hasan Omar Mansour
 
 [![GitHub stars](https://img.shields.io/github/stars/07asn/Portfolio?style=social)](https://github.com/07asn/Portfolio)
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://07asn.github.io/Portfolio/)
 
 > A cutting-edge web portfolio showcasing my expertise as a MERN Stack & Java Developer
 
-## ✨ Experience the Portfolio
+## Experience the Portfolio
 
 <div align="center">
   <a href="https://07asn.github.io/Portfolio/" target="_blank">
@@ -18,13 +18,13 @@
 
 ---
 
-## 👨‍💻 About Me
+## About Me
 
 I'm **Hasan Omar Hasan Mansour**, a passionate full-stack developer crafting digital experiences that blend creativity with technical excellence. Specializing in MERN stack and Java applications, I transform complex problems into elegant, user-centered solutions.
 
 ---
 
-## 🛠️ Core Technologies
+## Core Technologies
 
 <div align="center">
 
@@ -41,19 +41,19 @@ I'm **Hasan Omar Hasan Mansour**, a passionate full-stack developer crafting dig
 
 ---
 
-## ✨ Portfolio Highlights
+## Portfolio Highlights
 
-- **🎯 Responsive Design** - Flawlessly adapts to any device, from mobile to desktop
-- **🔮 Interactive UI** - Engaging animations and transitions enhance user experience
-- **🌓 Dark/Light Mode** - Elegant theme switching with state persistence
-- **⚡ Performance Optimized** - Lightning-fast loading and smooth interactions
-- **🧩 Component Architecture** - Modular, maintainable frontend structure
-- **📊 Project Showcase** - Dynamic display of featured projects with detailed info
-- **📱 Contact Integration** - Seamless communication channels for networking
+- **Responsive Design** - Flawlessly adapts to any device, from mobile to desktop
+- **Interactive UI** - Engaging animations and transitions enhance user experience
+- **Dark/Light Mode** - Elegant theme switching with state persistence
+- **Performance Optimized** - Lightning-fast loading and smooth interactions
+- **Component Architecture** - Modular, maintainable frontend structure
+- **Project Showcase** - Dynamic display of featured projects with detailed info
+- **Contact Integration** - Seamless communication channels for networking
 
 ---
 
-## 📸 Visual Journey
+## Visual Journey
 
 <div align="center">
   <table>
@@ -86,7 +86,7 @@ I'm **Hasan Omar Hasan Mansour**, a passionate full-stack developer crafting dig
 
 ---
 
-## 🏗️ Architecture & Implementation
+## Architecture & Implementation
 
 The portfolio is built with a focus on modern web standards and best practices:
 
@@ -109,7 +109,7 @@ portfolio/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -136,7 +136,7 @@ portfolio/
 
 ---
 
-## 📬 Connect With Me
+## Connect With Me
 
 <div align="center">
   <a href="https://github.com/07asn" target="_blank">
